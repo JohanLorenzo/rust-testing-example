@@ -4,6 +4,11 @@ fn add_world(foo: &str) -> String {
     return bar;
 }
 
+fn main() {
+    let string = add_world("Hello");
+    println!("{}", string);
+}
+
 #[test]
 fn test_should_add_world() {
     assert_eq!("Hello world", add_world("Hello"));
