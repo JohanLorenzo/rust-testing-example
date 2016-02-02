@@ -4,6 +4,10 @@ fn add_world(foo: &str) -> String {
     return bar;
 }
 
+fn unused_function() -> String {
+    return "unused".to_string();
+}
+
 fn main() {
     let string = add_world("Hello");
     println!("{}", string);
